@@ -22,12 +22,12 @@ public class Car {
 
 	private static ArrayList<Car> cars;
 
-	public static void main(String[] args) {
+	{
     	new ArrayList<>(cars.subList(0, 2000));
         try (Scanner scanner = new Scanner(new File("data.csv"))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                // Split by comma; handle quoted commas if necessary
+                // Split by commas
                 @SuppressWarnings("unused")
 				String[] values = line.split(",");
                 Car.add();
