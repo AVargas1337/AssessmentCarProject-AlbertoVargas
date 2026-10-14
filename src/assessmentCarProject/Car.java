@@ -110,11 +110,22 @@ public class Car {
 			Milage_kmpl = milage_kmpl;
 		}
 		@Override
-		public String toString() {
+		public String toString() {{
 			return "Car [Car_ID=" + Car_ID + ", Model=" + Model + ", Year=" + Year + ", Fuel_Type=" + Fuel_Type
 					+ ", Color=" + Color + ", Milage_kmpl=" + Milage_kmpl + "]";
 		}
 		
+		for (int i = 0; i < cars.length - 1; i++) {
+		    int minIndex = i;
+
+		    for (int j = i + 1; j < cars.indexOf(Car_ID); j++) {
+		        if ( Car_ID[j] < i ) 
+		            minIndex = j;
+		        
+		    }
+		}
+		    
 		
+}	
 	
 }//end classs
