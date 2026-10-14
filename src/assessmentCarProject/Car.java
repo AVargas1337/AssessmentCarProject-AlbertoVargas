@@ -43,7 +43,7 @@ public class Car {
 		return null;
 	}
 	private static void add() {
-		// TODO Auto-generated method stub
+		// made a piece of code to allow variable
 		
 	}
 	
