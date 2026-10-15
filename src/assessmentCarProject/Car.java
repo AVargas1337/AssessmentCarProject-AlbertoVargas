@@ -114,18 +114,25 @@ public class Car {
 			return "Car [Car_ID=" + Car_ID + ", Model=" + Model + ", Year=" + Year + ", Fuel_Type=" + Fuel_Type
 					+ ", Color=" + Color + ", Milage_kmpl=" + Milage_kmpl + "]";
 		}
-		
-		for (int i = 0; i < cars.length - 1; i++) {
-		    int minIndex = i;
-
-		    for (int j = i + 1; j < cars.indexOf(Car_ID); j++) {
-		        if ( Car_ID[j] < i ) 
-		            minIndex = j;
-		        
-		    }
 		}
-		    
 		
-}	
-	
+		//created insertion sort
+		
+		public void insertionSort(ArrayList<Car> cars) {
+		
+		
+			for (int j = 1; j < cars.size(); j++) {
+	        	Car temp = cars.get(j);
+	        	int in = j;
+	        	
+	        	while (in > 0 && cars.size()) {
+	        		cars.set(in, cars.get(in -1));
+	        		
+	        		in--;
+	        	}
+	        	cars.set(in, temp);
+
+
+		    }				
+}		
 }//end classs
